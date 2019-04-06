@@ -11,7 +11,7 @@ Add this plugin globally or attached to a Service.
 All calls routed to a Service will then be proxied through the specify proxy host and port.
 
 ```bash
-$ curl -X POST http://kong:8001/service/{api}/plugins \
+$ curl -X POST http://kong:8001/service/{id}/plugins \
     --data "name=forward-proxy" \
     --data "config.proxy_host=proxy.mycorp.org" \
     --data "config.proxy_port=8080"
