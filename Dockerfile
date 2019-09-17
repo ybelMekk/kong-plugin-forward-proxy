@@ -1,4 +1,4 @@
-FROM kong:1.2.1-alpine
+FROM kong:1.3.0-alpine
 RUN mkdir /forward-proxy
 COPY . /forward-proxy/
 RUN cd /forward-proxy && luarocks make
